@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "Contact",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contact_name": {
+      "type": "text"
+    },
+    "company_name": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "status_active": {
+      "type": "boolean"
+    },
+    "contact_type": {
+      "type": "string"
+    },
+    "other_name": {
+      "type": "string"
+    },
+    "contact_group": {
+      "type": "string"
+    },
+    "class": {
+      "type": "string"
+    },
+    "resource": {
+      "type": "string"
+    },
+    "interest_type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "contact_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "contacts"
+    },
+    "activities": {
+      "collection": "activity",
+      "via": "contact"
+    }
+  }
+}
