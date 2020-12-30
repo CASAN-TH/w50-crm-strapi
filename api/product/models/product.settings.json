@@ -41,7 +41,9 @@
       "required": false
     },
     "user": {
-      "type": "string"
+      "via": "products",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

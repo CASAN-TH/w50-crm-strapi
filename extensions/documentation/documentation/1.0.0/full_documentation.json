@@ -14,11 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-<<<<<<< HEAD
-    "x-generation-date": "12/30/2020 3:33:35 PM"
-=======
-    "x-generation-date": "12/30/2020 4:25:28 PM"
->>>>>>> a16d3df59d44d39b1b43eea85b7c98c9b1cc087c
+    "x-generation-date": "12/30/2020 4:48:22 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5753,6 +5749,143 @@
           "due_date": {
             "type": "string"
           },
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email",
+              "firstname",
+              "lastname"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "integer"
+              },
+              "mobile": {
+                "type": "integer"
+              },
+              "website": {
+                "type": "string"
+              },
+              "fax": {
+                "type": "integer"
+              },
+              "dateofbirth": {
+                "type": "string"
+              },
+              "language": {
+                "type": "string"
+              },
+              "countrylocation": {
+                "type": "string"
+              },
+              "street": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              },
+              "zipcode": {
+                "type": "string"
+              },
+              "timefomat": {
+                "type": "string"
+              },
+              "timezone": {
+                "type": "string"
+              },
+              "companies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "contacts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "deals": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "promotions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5777,6 +5910,9 @@
             "type": "string"
           },
           "due_date": {
+            "type": "string"
+          },
+          "user": {
             "type": "string"
           },
           "published_at": {
@@ -5818,6 +5954,143 @@
           "case_status": {
             "type": "string"
           },
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email",
+              "firstname",
+              "lastname"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "integer"
+              },
+              "mobile": {
+                "type": "integer"
+              },
+              "website": {
+                "type": "string"
+              },
+              "fax": {
+                "type": "integer"
+              },
+              "dateofbirth": {
+                "type": "string"
+              },
+              "language": {
+                "type": "string"
+              },
+              "countrylocation": {
+                "type": "string"
+              },
+              "street": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              },
+              "zipcode": {
+                "type": "string"
+              },
+              "timefomat": {
+                "type": "string"
+              },
+              "timezone": {
+                "type": "string"
+              },
+              "companies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "contacts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "deals": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "promotions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5843,6 +6116,9 @@
             "format": "date"
           },
           "case_status": {
+            "type": "string"
+          },
+          "user": {
             "type": "string"
           },
           "published_at": {
@@ -5910,6 +6186,146 @@
           "company_image": {
             "type": "string"
           },
+          "users": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "username",
+                "email",
+                "firstname",
+                "lastname"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "username": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                },
+                "resetPasswordToken": {
+                  "type": "string"
+                },
+                "confirmationToken": {
+                  "type": "string"
+                },
+                "confirmed": {
+                  "type": "boolean"
+                },
+                "blocked": {
+                  "type": "boolean"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "firstname": {
+                  "type": "string"
+                },
+                "lastname": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "integer"
+                },
+                "mobile": {
+                  "type": "integer"
+                },
+                "website": {
+                  "type": "string"
+                },
+                "fax": {
+                  "type": "integer"
+                },
+                "dateofbirth": {
+                  "type": "string"
+                },
+                "language": {
+                  "type": "string"
+                },
+                "countrylocation": {
+                  "type": "string"
+                },
+                "street": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "zipcode": {
+                  "type": "string"
+                },
+                "timefomat": {
+                  "type": "string"
+                },
+                "timezone": {
+                  "type": "string"
+                },
+                "companies": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "contacts": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "activities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "cases": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "deals": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "promotions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "products": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5962,6 +6378,12 @@
           },
           "company_image": {
             "type": "string"
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -6028,6 +6450,146 @@
           "contact_image": {
             "type": "string"
           },
+          "users": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "username",
+                "email",
+                "firstname",
+                "lastname"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "username": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                },
+                "resetPasswordToken": {
+                  "type": "string"
+                },
+                "confirmationToken": {
+                  "type": "string"
+                },
+                "confirmed": {
+                  "type": "boolean"
+                },
+                "blocked": {
+                  "type": "boolean"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "firstname": {
+                  "type": "string"
+                },
+                "lastname": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "integer"
+                },
+                "mobile": {
+                  "type": "integer"
+                },
+                "website": {
+                  "type": "string"
+                },
+                "fax": {
+                  "type": "integer"
+                },
+                "dateofbirth": {
+                  "type": "string"
+                },
+                "language": {
+                  "type": "string"
+                },
+                "countrylocation": {
+                  "type": "string"
+                },
+                "street": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "zipcode": {
+                  "type": "string"
+                },
+                "timefomat": {
+                  "type": "string"
+                },
+                "timezone": {
+                  "type": "string"
+                },
+                "companies": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "contacts": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "activities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "cases": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "deals": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "promotions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "products": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6081,6 +6643,12 @@
           "contact_image": {
             "type": "string"
           },
+          "users": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6126,6 +6694,143 @@
           "count_product": {
             "type": "integer"
           },
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email",
+              "firstname",
+              "lastname"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "integer"
+              },
+              "mobile": {
+                "type": "integer"
+              },
+              "website": {
+                "type": "string"
+              },
+              "fax": {
+                "type": "integer"
+              },
+              "dateofbirth": {
+                "type": "string"
+              },
+              "language": {
+                "type": "string"
+              },
+              "countrylocation": {
+                "type": "string"
+              },
+              "street": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              },
+              "zipcode": {
+                "type": "string"
+              },
+              "timefomat": {
+                "type": "string"
+              },
+              "timezone": {
+                "type": "string"
+              },
+              "companies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "contacts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "deals": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "promotions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6158,6 +6863,9 @@
           },
           "count_product": {
             "type": "integer"
+          },
+          "user": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -6265,7 +6973,141 @@
             }
           },
           "user": {
-            "type": "string"
+            "required": [
+              "id",
+              "username",
+              "email",
+              "firstname",
+              "lastname"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "integer"
+              },
+              "mobile": {
+                "type": "integer"
+              },
+              "website": {
+                "type": "string"
+              },
+              "fax": {
+                "type": "integer"
+              },
+              "dateofbirth": {
+                "type": "string"
+              },
+              "language": {
+                "type": "string"
+              },
+              "countrylocation": {
+                "type": "string"
+              },
+              "street": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              },
+              "zipcode": {
+                "type": "string"
+              },
+              "timefomat": {
+                "type": "string"
+              },
+              "timezone": {
+                "type": "string"
+              },
+              "companies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "contacts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "deals": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "promotions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -6400,6 +7242,143 @@
             "type": "string",
             "format": "date"
           },
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email",
+              "firstname",
+              "lastname"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "integer"
+              },
+              "mobile": {
+                "type": "integer"
+              },
+              "website": {
+                "type": "string"
+              },
+              "fax": {
+                "type": "integer"
+              },
+              "dateofbirth": {
+                "type": "string"
+              },
+              "language": {
+                "type": "string"
+              },
+              "countrylocation": {
+                "type": "string"
+              },
+              "street": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              },
+              "zipcode": {
+                "type": "string"
+              },
+              "timefomat": {
+                "type": "string"
+              },
+              "timezone": {
+                "type": "string"
+              },
+              "companies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "contacts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "deals": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "promotions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6421,6 +7400,9 @@
           "end_date": {
             "type": "string",
             "format": "date"
+          },
+          "user": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -6582,6 +7564,48 @@
                 },
                 "timezone": {
                   "type": "string"
+                },
+                "companies": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "contacts": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "activities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "cases": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "deals": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "promotions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "products": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "created_by": {
                   "type": "string"
@@ -6746,6 +7770,376 @@
           },
           "timezone": {
             "type": "string"
+          },
+          "companies": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "company_name": {
+                  "type": "string"
+                },
+                "contact_name": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "mobile": {
+                  "type": "string"
+                },
+                "status_active": {
+                  "type": "boolean"
+                },
+                "company_type": {
+                  "type": "string"
+                },
+                "other_name": {
+                  "type": "string"
+                },
+                "company_group": {
+                  "type": "string"
+                },
+                "class": {
+                  "type": "string"
+                },
+                "resource": {
+                  "type": "string"
+                },
+                "interest_tpye": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "company_image": {
+                  "type": "string"
+                },
+                "users": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "contacts": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "contact_name": {
+                  "type": "string"
+                },
+                "company_name": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "mobile": {
+                  "type": "string"
+                },
+                "status_active": {
+                  "type": "boolean"
+                },
+                "contact_type": {
+                  "type": "string"
+                },
+                "other_name": {
+                  "type": "string"
+                },
+                "contact_group": {
+                  "type": "string"
+                },
+                "class": {
+                  "type": "string"
+                },
+                "resource": {
+                  "type": "string"
+                },
+                "interest_type": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "contact_image": {
+                  "type": "string"
+                },
+                "users": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "activities": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "task_name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "priority": {
+                  "type": "string"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "owner": {
+                  "type": "string"
+                },
+                "due_date": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "cases": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "employees_name": {
+                  "type": "string"
+                },
+                "topic": {
+                  "type": "string"
+                },
+                "case_from": {
+                  "type": "string"
+                },
+                "case_type": {
+                  "type": "string"
+                },
+                "case_date": {
+                  "type": "string"
+                },
+                "case_status": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "deals": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "deal_name": {
+                  "type": "string"
+                },
+                "contact_name": {
+                  "type": "string"
+                },
+                "company_name": {
+                  "type": "string"
+                },
+                "deal_status": {
+                  "type": "string"
+                },
+                "deal_value": {
+                  "type": "integer"
+                },
+                "dealend_date": {
+                  "type": "string"
+                },
+                "deal_product": {
+                  "type": "string"
+                },
+                "count_product": {
+                  "type": "integer"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "promotions": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "product_name": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "number"
+                },
+                "start_date": {
+                  "type": "string"
+                },
+                "end_date": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "productname": {
+                  "type": "string"
+                },
+                "productcode": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "string"
+                },
+                "descrip": {
+                  "type": "string"
+                },
+                "productpic": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -6838,6 +8232,48 @@
           },
           "timezone": {
             "type": "string"
+          },
+          "companies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "contacts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "activities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "cases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "deals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "promotions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"

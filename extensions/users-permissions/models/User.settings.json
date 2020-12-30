@@ -110,6 +110,36 @@
     },
     "timezone": {
       "type": "string"
+    },
+    "companies": {
+      "collection": "company",
+      "via": "users",
+      "dominant": true
+    },
+    "contacts": {
+      "collection": "contact",
+      "via": "users",
+      "dominant": true
+    },
+    "activities": {
+      "collection": "activities",
+      "via": "user"
+    },
+    "cases": {
+      "collection": "case",
+      "via": "user"
+    },
+    "deals": {
+      "collection": "deal",
+      "via": "user"
+    },
+    "promotions": {
+      "collection": "promotion",
+      "via": "user"
+    },
+    "products": {
+      "collection": "product",
+      "via": "user"
     }
   }
 }

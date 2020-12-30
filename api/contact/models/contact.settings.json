@@ -55,6 +55,11 @@
     },
     "contact_image": {
       "type": "string"
+    },
+    "users": {
+      "via": "contacts",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }

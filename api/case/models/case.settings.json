@@ -28,6 +28,11 @@
     },
     "case_status": {
       "type": "string"
+    },
+    "user": {
+      "via": "cases",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

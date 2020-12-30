@@ -34,6 +34,11 @@
     },
     "count_product": {
       "type": "integer"
+    },
+    "user": {
+      "via": "deals",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

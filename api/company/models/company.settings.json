@@ -55,6 +55,11 @@
     },
     "company_image": {
       "type": "string"
+    },
+    "users": {
+      "via": "companies",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }

@@ -27,6 +27,11 @@
     },
     "due_date": {
       "type": "string"
+    },
+    "user": {
+      "via": "activities",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

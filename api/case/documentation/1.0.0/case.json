@@ -541,6 +541,143 @@
           "case_status": {
             "type": "string"
           },
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email",
+              "firstname",
+              "lastname"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "integer"
+              },
+              "mobile": {
+                "type": "integer"
+              },
+              "website": {
+                "type": "string"
+              },
+              "fax": {
+                "type": "integer"
+              },
+              "dateofbirth": {
+                "type": "string"
+              },
+              "language": {
+                "type": "string"
+              },
+              "countrylocation": {
+                "type": "string"
+              },
+              "street": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              },
+              "zipcode": {
+                "type": "string"
+              },
+              "timefomat": {
+                "type": "string"
+              },
+              "timezone": {
+                "type": "string"
+              },
+              "companies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "contacts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "deals": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "promotions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -566,6 +703,9 @@
             "format": "date"
           },
           "case_status": {
+            "type": "string"
+          },
+          "user": {
             "type": "string"
           },
           "published_at": {
