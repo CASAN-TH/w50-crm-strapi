@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/21/2020 9:47:30 PM"
+    "x-generation-date": "12/30/2020 10:08:17 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2226,7 +2226,9 @@
               "required": [
                 "id",
                 "username",
-                "email"
+                "email",
+                "firstname",
+                "lastname"
               ],
               "properties": {
                 "id": {
@@ -2257,6 +2259,54 @@
                   "type": "boolean"
                 },
                 "role": {
+                  "type": "string"
+                },
+                "firstname": {
+                  "type": "string"
+                },
+                "lastname": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "integer"
+                },
+                "mobile": {
+                  "type": "integer"
+                },
+                "website": {
+                  "type": "string"
+                },
+                "fax": {
+                  "type": "integer"
+                },
+                "dateofbirth": {
+                  "type": "string"
+                },
+                "language": {
+                  "type": "string"
+                },
+                "countrylocation": {
+                  "type": "string"
+                },
+                "street": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "zipcode": {
+                  "type": "string"
+                },
+                "timefomat": {
+                  "type": "string"
+                },
+                "timezone": {
                   "type": "string"
                 },
                 "created_by": {
@@ -2309,7 +2359,9 @@
         "required": [
           "id",
           "username",
-          "email"
+          "email",
+          "firstname",
+          "lastname"
         ],
         "properties": {
           "id": {
@@ -2371,13 +2423,64 @@
                 "type": "string"
               }
             }
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "integer"
+          },
+          "mobile": {
+            "type": "integer"
+          },
+          "website": {
+            "type": "string"
+          },
+          "fax": {
+            "type": "integer"
+          },
+          "dateofbirth": {
+            "type": "string",
+            "format": "date"
+          },
+          "language": {
+            "type": "string"
+          },
+          "countrylocation": {
+            "type": "string"
+          },
+          "street": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "zipcode": {
+            "type": "string"
+          },
+          "timefomat": {
+            "type": "string"
+          },
+          "timezone": {
+            "type": "string"
           }
         }
       },
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email"
+          "email",
+          "firstname",
+          "lastname"
         ],
         "properties": {
           "username": {
@@ -2411,6 +2514,55 @@
             "default": false
           },
           "role": {
+            "type": "string"
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "integer"
+          },
+          "mobile": {
+            "type": "integer"
+          },
+          "website": {
+            "type": "string"
+          },
+          "fax": {
+            "type": "integer"
+          },
+          "dateofbirth": {
+            "type": "string",
+            "format": "date"
+          },
+          "language": {
+            "type": "string"
+          },
+          "countrylocation": {
+            "type": "string"
+          },
+          "street": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "zipcode": {
+            "type": "string"
+          },
+          "timefomat": {
+            "type": "string"
+          },
+          "timezone": {
             "type": "string"
           },
           "created_by": {
