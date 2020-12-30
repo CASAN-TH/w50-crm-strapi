@@ -53,17 +53,6 @@
     "address": {
       "type": "string"
     },
-    "contact_image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "users": {
       "plugin": "users-permissions",
       "collection": "user",
@@ -72,6 +61,9 @@
     "activities": {
       "collection": "activity",
       "via": "contact"
+    },
+    "contact_image": {
+      "type": "string"
     }
   }
 }

@@ -1303,9 +1303,6 @@
                 "address": {
                   "type": "string"
                 },
-                "contact_image": {
-                  "type": "string"
-                },
                 "users": {
                   "type": "array",
                   "items": {
@@ -1317,6 +1314,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "contact_image": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
