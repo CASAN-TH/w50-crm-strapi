@@ -677,6 +677,164 @@
               }
             }
           },
+          "company": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "company_name": {
+                "type": "string"
+              },
+              "contact_name": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "mobile": {
+                "type": "string"
+              },
+              "status_active": {
+                "type": "boolean"
+              },
+              "company_type": {
+                "type": "string"
+              },
+              "other_name": {
+                "type": "string"
+              },
+              "company_group": {
+                "type": "string"
+              },
+              "class": {
+                "type": "string"
+              },
+              "resource": {
+                "type": "string"
+              },
+              "interest_tpye": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "company_image": {
+                "type": "string"
+              },
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "deal": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "contact": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "contact_name": {
+                "type": "string"
+              },
+              "company_name": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "mobile": {
+                "type": "string"
+              },
+              "status_active": {
+                "type": "boolean"
+              },
+              "contact_type": {
+                "type": "string"
+              },
+              "other_name": {
+                "type": "string"
+              },
+              "contact_group": {
+                "type": "string"
+              },
+              "class": {
+                "type": "string"
+              },
+              "resource": {
+                "type": "string"
+              },
+              "interest_type": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "contact_image": {
+                "type": "string"
+              },
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "deal": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -704,6 +862,12 @@
             "type": "string"
           },
           "user": {
+            "type": "string"
+          },
+          "company": {
+            "type": "string"
+          },
+          "contact": {
             "type": "string"
           },
           "published_at": {

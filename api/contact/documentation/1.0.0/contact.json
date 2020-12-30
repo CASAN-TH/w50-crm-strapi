@@ -707,6 +707,113 @@
               }
             }
           },
+          "activities": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "task_name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "priority": {
+                  "type": "string"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "owner": {
+                  "type": "string"
+                },
+                "due_date": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "company": {
+                  "type": "string"
+                },
+                "contact": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "deal": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "deal_name": {
+                "type": "string"
+              },
+              "contact_name": {
+                "type": "string"
+              },
+              "company_name": {
+                "type": "string"
+              },
+              "deal_status": {
+                "type": "string"
+              },
+              "deal_value": {
+                "type": "integer"
+              },
+              "dealend_date": {
+                "type": "string"
+              },
+              "deal_product": {
+                "type": "string"
+              },
+              "count_product": {
+                "type": "integer"
+              },
+              "user": {
+                "type": "string"
+              },
+              "contact": {
+                "type": "string"
+              },
+              "company": {
+                "type": "string"
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -765,6 +872,15 @@
             "items": {
               "type": "string"
             }
+          },
+          "activities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "deal": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

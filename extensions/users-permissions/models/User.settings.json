@@ -112,34 +112,34 @@
       "type": "string"
     },
     "companies": {
-      "collection": "company",
       "via": "users",
+      "collection": "company",
       "dominant": true
     },
     "contacts": {
-      "collection": "contact",
       "via": "users",
+      "collection": "contact",
       "dominant": true
     },
     "activities": {
-      "collection": "activities",
-      "via": "user"
+      "via": "user",
+      "collection": "activities"
     },
     "cases": {
       "collection": "case",
       "via": "user"
     },
     "deals": {
-      "collection": "deal",
-      "via": "user"
+      "via": "user",
+      "collection": "deal"
     },
     "promotions": {
       "collection": "promotion",
       "via": "user"
     },
     "products": {
-      "collection": "product",
-      "via": "user"
+      "via": "user",
+      "collection": "product"
     }
   }
 }

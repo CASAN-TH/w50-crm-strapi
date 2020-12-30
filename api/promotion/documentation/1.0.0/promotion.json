@@ -743,6 +743,61 @@
               }
             }
           },
+          "product": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "productname": {
+                "type": "string"
+              },
+              "productcode": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "price": {
+                "type": "string"
+              },
+              "count": {
+                "type": "string"
+              },
+              "descrip": {
+                "type": "string"
+              },
+              "productpic": {
+                "type": "string"
+              },
+              "user": {
+                "type": "string"
+              },
+              "deals": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "promotions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -766,6 +821,9 @@
             "format": "date"
           },
           "user": {
+            "type": "string"
+          },
+          "product": {
             "type": "string"
           },
           "published_at": {

@@ -41,9 +41,17 @@
       "required": false
     },
     "user": {
-      "via": "products",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "products"
+    },
+    "deals": {
+      "collection": "deal",
+      "via": "products"
+    },
+    "promotions": {
+      "collection": "promotion",
+      "via": "product"
     }
   }
 }

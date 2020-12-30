@@ -57,9 +57,17 @@
       "type": "string"
     },
     "users": {
-      "via": "companies",
       "plugin": "users-permissions",
-      "collection": "user"
+      "collection": "user",
+      "via": "companies"
+    },
+    "activities": {
+      "collection": "activities",
+      "via": "company"
+    },
+    "deal": {
+      "via": "company",
+      "model": "deal"
     }
   }
 }

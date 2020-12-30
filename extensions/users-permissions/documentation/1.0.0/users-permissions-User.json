@@ -1363,6 +1363,15 @@
                     "type": "string"
                   }
                 },
+                "activities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "deal": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -1436,6 +1445,15 @@
                     "type": "string"
                   }
                 },
+                "activities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "deal": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -1477,6 +1495,12 @@
                   "type": "string"
                 },
                 "user": {
+                  "type": "string"
+                },
+                "company": {
+                  "type": "string"
+                },
+                "contact": {
                   "type": "string"
                 },
                 "published_at": {
@@ -1571,6 +1595,18 @@
                 "user": {
                   "type": "string"
                 },
+                "contact": {
+                  "type": "string"
+                },
+                "company": {
+                  "type": "string"
+                },
+                "products": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -1612,6 +1648,9 @@
                   "type": "string"
                 },
                 "user": {
+                  "type": "string"
+                },
+                "product": {
                   "type": "string"
                 },
                 "published_at": {
@@ -1659,6 +1698,18 @@
                 },
                 "user": {
                   "type": "string"
+                },
+                "deals": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "promotions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"

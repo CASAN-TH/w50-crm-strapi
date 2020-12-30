@@ -38,6 +38,10 @@
       "via": "promotions",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "product": {
+      "via": "promotions",
+      "model": "product"
     }
   }
 }
