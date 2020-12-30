@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deals",
+  "info": {
+    "name": "deal",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "deal_name": {
+      "type": "string"
+    },
+    "contact_name": {
+      "type": "string"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "deal_status": {
+      "type": "string"
+    },
+    "deal_value": {
+      "type": "integer"
+    },
+    "dealend_date": {
+      "type": "date"
+    },
+    "deal_product": {
+      "type": "string"
+    },
+    "count_product": {
+      "type": "integer"
+    }
+  }
+}
