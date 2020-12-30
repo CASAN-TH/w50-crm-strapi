@@ -34,6 +34,24 @@
     },
     "count_product": {
       "type": "integer"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "deals"
+    },
+    "contact": {
+      "model": "contact",
+      "via": "deal"
+    },
+    "company": {
+      "model": "company",
+      "via": "deal"
+    },
+    "products": {
+      "via": "deals",
+      "collection": "product",
+      "dominant": true
     }
   }
 }

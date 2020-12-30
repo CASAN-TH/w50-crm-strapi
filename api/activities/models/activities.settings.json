@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "activities",
   "info": {
-    "name": "activities"
+    "name": "activities",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -27,6 +28,19 @@
     },
     "due_date": {
       "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "activities"
+    },
+    "company": {
+      "via": "activities",
+      "model": "company"
+    },
+    "contact": {
+      "via": "activities",
+      "model": "contact"
     }
   }
 }

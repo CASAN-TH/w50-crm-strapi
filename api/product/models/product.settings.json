@@ -41,7 +41,17 @@
       "required": false
     },
     "user": {
-      "type": "string"
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "products"
+    },
+    "deals": {
+      "collection": "deal",
+      "via": "products"
+    },
+    "promotions": {
+      "collection": "promotion",
+      "via": "product"
     }
   }
 }

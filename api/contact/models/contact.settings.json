@@ -55,6 +55,19 @@
     },
     "contact_image": {
       "type": "string"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "contacts"
+    },
+    "activities": {
+      "collection": "activities",
+      "via": "contact"
+    },
+    "deal": {
+      "via": "contact",
+      "model": "deal"
     }
   }
 }
