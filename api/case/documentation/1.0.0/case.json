@@ -1,73 +1,9 @@
 {
   "paths": {
-    "/users-permissions/roles/{id}": {
+    "/cases": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve a role depending on its id",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/UsersPermissionsRole"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "UsersPermissions - Role"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/users-permissions/roles": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve all role documents",
+        "description": "",
         "responses": {
           "200": {
             "description": "response",
@@ -76,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/UsersPermissionsRole"
+                    "$ref": "#/components/schemas/Case"
                   }
                 }
               }
@@ -115,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "UsersPermissions - Role"
+          "Case"
         ],
         "parameters": [
           {
@@ -258,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new role",
+        "description": "Create a new record",
         "responses": {
           "200": {
             "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsersPermissionsRole"
+                  "$ref": "#/components/schemas/Case"
                 }
               }
             }
@@ -303,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "UsersPermissions - Role"
+          "Case"
         ],
         "requestBody": {
           "description": "",
@@ -311,90 +247,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewUsersPermissionsRole"
+                "$ref": "#/components/schemas/NewCase"
               }
             }
           }
         }
       }
     },
-    "/users-permissions/roles/{role}": {
-      "put": {
+    "/cases/count": {
+      "get": {
         "deprecated": false,
-        "description": "Update a role",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/UsersPermissionsRole"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "UsersPermissions - Role"
-        ],
-        "parameters": [
-          {
-            "name": "role",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewUsersPermissionsRole"
-              }
-            }
-          }
-        }
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a role",
+        "description": "",
         "responses": {
           "200": {
             "description": "response",
@@ -402,8 +265,8 @@
               "application/json": {
                 "schema": {
                   "properties": {
-                    "foo": {
-                      "type": "string"
+                    "count": {
+                      "type": "integer"
                     }
                   }
                 }
@@ -443,11 +306,200 @@
         },
         "summary": "",
         "tags": [
-          "UsersPermissions - Role"
+          "Case"
+        ],
+        "parameters": []
+      }
+    },
+    "/cases/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Case"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Case"
         ],
         "parameters": [
           {
-            "name": "role",
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Case"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Case"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewCase"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a record",
+        "responses": {
+          "200": {
+            "description": "deletes a single record based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Case"
+        ],
+        "parameters": [
+          {
+            "name": "id",
             "in": "path",
             "description": "",
             "deprecated": false,
@@ -462,192 +514,63 @@
   },
   "components": {
     "schemas": {
-      "UsersPermissionsRole": {
+      "Case": {
         "required": [
-          "id",
-          "name"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
+          "employees_name": {
+            "type": "string"
+          },
+          "topic": {
+            "type": "string"
+          },
+          "case_from": {
+            "type": "string"
+          },
+          "case_type": {
+            "type": "string"
+          },
+          "case_date": {
             "type": "string",
-            "minLength": 3
+            "format": "date"
           },
-          "description": {
+          "case_status": {
             "type": "string"
           },
-          "type": {
-            "type": "string"
-          },
-          "permissions": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "type",
-                "controller",
-                "action",
-                "enabled"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "type": {
-                  "type": "string"
-                },
-                "controller": {
-                  "type": "string"
-                },
-                "action": {
-                  "type": "string"
-                },
-                "enabled": {
-                  "type": "boolean"
-                },
-                "policy": {
-                  "type": "string"
-                },
-                "role": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "users": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "username",
-                "email",
-                "firstname",
-                "lastname"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "username": {
-                  "type": "string"
-                },
-                "email": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "password": {
-                  "type": "string"
-                },
-                "resetPasswordToken": {
-                  "type": "string"
-                },
-                "confirmationToken": {
-                  "type": "string"
-                },
-                "confirmed": {
-                  "type": "boolean"
-                },
-                "blocked": {
-                  "type": "boolean"
-                },
-                "role": {
-                  "type": "string"
-                },
-                "firstname": {
-                  "type": "string"
-                },
-                "lastname": {
-                  "type": "string"
-                },
-                "phone": {
-                  "type": "integer"
-                },
-                "mobile": {
-                  "type": "integer"
-                },
-                "website": {
-                  "type": "string"
-                },
-                "fax": {
-                  "type": "integer"
-                },
-                "dateofbirth": {
-                  "type": "string"
-                },
-                "language": {
-                  "type": "string"
-                },
-                "countrylocation": {
-                  "type": "string"
-                },
-                "street": {
-                  "type": "string"
-                },
-                "city": {
-                  "type": "string"
-                },
-                "state": {
-                  "type": "string"
-                },
-                "country": {
-                  "type": "string"
-                },
-                "zipcode": {
-                  "type": "string"
-                },
-                "timefomat": {
-                  "type": "string"
-                },
-                "timezone": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
           }
         }
       },
-      "NewUsersPermissionsRole": {
-        "required": [
-          "name"
-        ],
+      "NewCase": {
         "properties": {
-          "name": {
+          "employees_name": {
+            "type": "string"
+          },
+          "topic": {
+            "type": "string"
+          },
+          "case_from": {
+            "type": "string"
+          },
+          "case_type": {
+            "type": "string"
+          },
+          "case_date": {
             "type": "string",
-            "minLength": 3
+            "format": "date"
           },
-          "description": {
+          "case_status": {
             "type": "string"
           },
-          "type": {
-            "type": "string"
-          },
-          "permissions": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "users": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
           },
           "created_by": {
             "type": "string"
@@ -661,7 +584,7 @@
   },
   "tags": [
     {
-      "name": "UsersPermissions - Role"
+      "name": "Case"
     }
   ]
 }

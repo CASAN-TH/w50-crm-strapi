@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cases",
+  "info": {
+    "name": "case",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "employees_name": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "case_from": {
+      "type": "string"
+    },
+    "case_type": {
+      "type": "string"
+    },
+    "case_date": {
+      "type": "date"
+    },
+    "case_status": {
+      "type": "string"
+    }
+  }
+}
