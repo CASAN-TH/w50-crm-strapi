@@ -58,6 +58,58 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "firstname": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "phone": {
+      "type": "integer"
+    },
+    "mobile": {
+      "type": "integer"
+    },
+    "website": {
+      "type": "string"
+    },
+    "fax": {
+      "type": "integer"
+    },
+    "dateofbirth": {
+      "type": "date"
+    },
+    "language": {
+      "type": "string"
+    },
+    "countrylocation": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "zipcode": {
+      "type": "string"
+    },
+    "timefomat": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string"
     }
   }
 }

@@ -1188,7 +1188,9 @@
         "required": [
           "id",
           "username",
-          "email"
+          "email",
+          "firstname",
+          "lastname"
         ],
         "properties": {
           "id": {
@@ -1250,13 +1252,64 @@
                 "type": "string"
               }
             }
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "integer"
+          },
+          "mobile": {
+            "type": "integer"
+          },
+          "website": {
+            "type": "string"
+          },
+          "fax": {
+            "type": "integer"
+          },
+          "dateofbirth": {
+            "type": "string",
+            "format": "date"
+          },
+          "language": {
+            "type": "string"
+          },
+          "countrylocation": {
+            "type": "string"
+          },
+          "street": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "zipcode": {
+            "type": "string"
+          },
+          "timefomat": {
+            "type": "string"
+          },
+          "timezone": {
+            "type": "string"
           }
         }
       },
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email"
+          "email",
+          "firstname",
+          "lastname"
         ],
         "properties": {
           "username": {
@@ -1290,6 +1343,55 @@
             "default": false
           },
           "role": {
+            "type": "string"
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "integer"
+          },
+          "mobile": {
+            "type": "integer"
+          },
+          "website": {
+            "type": "string"
+          },
+          "fax": {
+            "type": "integer"
+          },
+          "dateofbirth": {
+            "type": "string",
+            "format": "date"
+          },
+          "language": {
+            "type": "string"
+          },
+          "countrylocation": {
+            "type": "string"
+          },
+          "street": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "zipcode": {
+            "type": "string"
+          },
+          "timefomat": {
+            "type": "string"
+          },
+          "timezone": {
             "type": "string"
           },
           "created_by": {
