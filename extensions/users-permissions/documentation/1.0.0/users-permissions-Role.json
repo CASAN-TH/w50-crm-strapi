@@ -561,18 +561,6 @@
                 "role": {
                   "type": "string"
                 },
-                "contacts": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "activities": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "created_by": {
                   "type": "string"
                 },

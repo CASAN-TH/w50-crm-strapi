@@ -58,16 +58,6 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
-    },
-    "contacts": {
-      "via": "users",
-      "collection": "contact",
-      "dominant": true
-    },
-    "activities": {
-      "via": "users",
-      "collection": "activity",
-      "dominant": true
     }
   }
 }

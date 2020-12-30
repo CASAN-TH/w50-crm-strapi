@@ -53,15 +53,6 @@
     "address": {
       "type": "string"
     },
-    "users": {
-      "plugin": "users-permissions",
-      "collection": "user",
-      "via": "contacts"
-    },
-    "activities": {
-      "collection": "activity",
-      "via": "contact"
-    },
     "contact_image": {
       "type": "string"
     }
