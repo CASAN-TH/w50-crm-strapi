@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/30/2020 3:08:16 PM"
+    "x-generation-date": "12/30/2020 3:13:42 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3179,6 +3179,48 @@
           "company_name": {
             "type": "string"
           },
+          "contact_name": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "mobile": {
+            "type": "string"
+          },
+          "status_active": {
+            "type": "boolean"
+          },
+          "company_type": {
+            "type": "string"
+          },
+          "other_name": {
+            "type": "string"
+          },
+          "company_group": {
+            "type": "string"
+          },
+          "class": {
+            "type": "string"
+          },
+          "resource": {
+            "type": "string"
+          },
+          "interest_tpye": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "company_image": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -3188,6 +3230,48 @@
       "NewCompany": {
         "properties": {
           "company_name": {
+            "type": "string"
+          },
+          "contact_name": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "mobile": {
+            "type": "string"
+          },
+          "status_active": {
+            "type": "boolean"
+          },
+          "company_type": {
+            "type": "string"
+          },
+          "other_name": {
+            "type": "string"
+          },
+          "company_group": {
+            "type": "string"
+          },
+          "class": {
+            "type": "string"
+          },
+          "resource": {
+            "type": "string"
+          },
+          "interest_tpye": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "company_image": {
             "type": "string"
           },
           "published_at": {
